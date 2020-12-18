@@ -7,13 +7,36 @@
   <!-- utf-8 allows unicode to be translated properly (like for emojis) -->
   <meta charset="utf-8">
   <title>Soryan Kumar 😃</title>
+  <!-- Adding a link here to connect to external CSS-->
+  <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 
-<!-- body actually creates elements to appear on page -->
+<!-- More internal CSS style stuff to make it easier to edit body
+See https://developer.mozilla.org/en-US/docs/Web/CSS/border-style for border arguments-->
+<!-- img field can be used for editing all images (height/width)-->
+<!-- This internal CSS code is no longer necessary since we are now using external CSS to cover all webpages
+<style>
+  body {
+    background-color: #EAF6F6;
+  }
+  hr {
+    background-color: #EAF6F6;
+    border-color: gray;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    height: 0px;
+    width: 5%;
+  }
+</style>
+-->
 
-<body>
-  <h1>Soryan Kumar</h1>
+<!-- body actually creates elements to appear on page
+ CSS: Add background-color style attribute to change background color
+THIS ATTRIBUTE IS NOT NECESSARY ONCE YOU USE style above -->
+<body style="background-color: #EAF6F6;">
+  <h1 id="My_Name">Soryan Kumar</h1>
   <!-- url works as well as local path
         cell spacing is deprecated table attribute-->
   <table cellspacing="10">
