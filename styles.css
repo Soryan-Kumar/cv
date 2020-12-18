@@ -1,0 +1,55 @@
+/* Best practice to keep external css rules in alphabetical order
+CSS rules and attributes can be found at https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+*/
+
+/* TAG SELECTORS */
+body {
+  background-color: #EAF6F6;
+}
+hr {
+  background-color: #EAF6F6;
+  border-color: gray;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 5%;
+}
+h1 {
+  color: #66BFBF;
+}
+h3 {
+  color: #66BFBF;
+}
+
+/* This only works when you can actually see background (does all images)
+img {
+  background-color: red;
+}
+*/
+
+
+/* CLASS SELECTORS: Note that this works on anything with those class names, not just images*/
+.medal {
+  background-color: green;
+}
+.taco {
+  background-color: red;
+}
+
+.circular {
+  border-radius: 100%;
+}
+
+/* hover pseudoclass is to create active elements*/
+.taco:hover {
+  background-color: green;
+}
+
+.medal:hover {
+  background-color: red;
+}
+
+/* ID SELECTORS: Unlike classes, IDs must be unique (CSS linter no like)*/
+#My_Name {
+  color: #58a39d;
+}
