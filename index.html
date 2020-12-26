@@ -1,116 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<!-- head gives info about page itself like title -->
+  <head>
+    <meta charset="utf-8">
+    <title>Soryan Kumar</title>
 
-<head>
-  <!-- utf-8 allows unicode to be translated properly (like for emojis) -->
-  <meta charset="utf-8">
-  <title>Soryan Kumar 😃</title>
-  <!-- Adding a link here to connect to external CSS-->
-  <link rel="stylesheet" href="CSS/styles.css">
-</head>
+    <!-- TODO: Load Relevant fonts -->
+
+    <!-- Load Bootstrap and link stylesheet-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- TODO: Load Font Awesome Icons -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Add Favicon -->
+    <link rel="icon" href="new-favicon.ico">
+
+  </head>
+
+  <body>
+    <section id="home">
+
+      <!-- Nav Bar -->
+      <!-- Delete "bg-dark class to ger rid of dark background style"-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="experiences.html">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="awards.html">Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid home-content">
+
+      <!-- Title -->
+      <!-- Note that two columns occur when large, but one column when medium/small (everything is out of 12)-->
+      <!-- Get buttons and other components at https://getbootstrap.com/docs/4.0/components/buttons/ -->
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="intro-text">
 
 
-<!-- More internal CSS style stuff to make it easier to edit body
-See https://developer.mozilla.org/en-US/docs/Web/CSS/border-style for border arguments-->
-<!-- img field can be used for editing all images (height/width)-->
-<!-- This internal CSS code is no longer necessary since we are now using external CSS to cover all webpages
-<style>
-  body {
-    background-color: #EAF6F6;
-  }
-  hr {
-    background-color: #EAF6F6;
-    border-color: gray;
-    border-style: none;
-    border-top-style: dotted;
-    border-width: 5px;
-    height: 0px;
-    width: 5%;
-  }
-</style>
--->
+          <h1 class="title-name">Hi, I'm Soryan.</h1>
+          <br>
+          <h3>I am an Applied Math-Economics student at Brown University looking to apply machine learning, statistical
+            inference, and mathematical modeling to the medical field.</h3>
+          <br>
+          <!-- USE https://fontawesome.com/icons/google-play?style=brands to get unicode icons-->
+          <a type="button" class="btn btn-dark btn-lg space-button" href="experiences.html">My Work</a>
+          <a type="button" class="btn btn-outline-dark shift-button btn-lg space-button" href="contact.html">Contact Me</a>
+          <br>
+          <a class="footer-link" href="https://www.linkedin.com/in/soryan-kumar-58a083173/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+          <a class="footer-link" href="https://scholar.google.com/citations?user=hK0FVucAAAAJ&hl=en"><i class="fab fa-google fa-2x"></i></a>
+          <a class="footer-link" href="https://github.com/Soryan-Kumar"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/soryan.png" alt="profile-pic">
+        </div>
+      </div>
 
-<!-- body actually creates elements to appear on page
- CSS: Add background-color style attribute to change background color
-THIS ATTRIBUTE IS NOT NECESSARY ONCE YOU USE style above -->
-<body style="background-color: #EAF6F6;">
-  <h1 id="My_Name">Soryan Kumar</h1>
-  <!-- url works as well as local path
-        cell spacing is deprecated table attribute-->
-  <table cellspacing="10">
-    <tr>
-      <td><img src="soryan.png" alt="Aesthetic picture of Soryan" width=90></td>
-      <td><!-- <em> for italics emphasis and <i> for italics -->
-          <!-- <strong> for bold emphasis and <b> for bold -->
-          <p><em>Student at Brown University</em></p>
-          <p>I like math. (Insert Personal Bio here)</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Awards and Publications</h3>
-  <!-- use type and start attributes to get roman numerals or start from a certain number -->
-  <ol>
-    <li>Radiology paper</li>
-    <li>Seabird paper</li>
-    <li>2nd Place at Citadel Datathon</li>
-    <ul>
-        <li>Received $1250 cash prize</li>
-        <li>But not as good as <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs&ab_channel=AllKindsOfStuff">this</a></li>
-    </ul>
-  </ol>
-  <hr>
-  <!-- nested tables for style-->
-  <h3>Skills</h3>
-  <table border="1" cellspacing="10">
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>Python</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>Microsoft Office</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>Julia</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>STATA</td>
-            <td>⭐️⭐️⭐️⭐️</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>R</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>Arduino</td>
-            <td>⭐️⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>MATLAB</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>HTML</td>
-            <td>⭐️⭐️⭐️</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <!-- Link to alternate page for work experiences -->
-  <h3><a href="work_exp.html">Work Experiences</a> <a href="contact.html">Contact Me</a>
-    <a href="inputs.html">Try my Inputs</a>
-  </h3>
-</body>
+    </div>
+
+    </section>
+  </body>
+
 </html>

@@ -1,0 +1,155 @@
+body {
+  background-color: #343a40;
+  text-align: center;
+}
+
+hr {
+  background-color: white;
+  margin: 20px 100px 20px 20px;
+  border-top-color: #7D7D7D;
+  border-width: 1px;
+}
+
+/* Home Section */
+.title-name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.home-content {
+  background-color: white;
+  padding-bottom: 3rem;
+}
+
+.nav-item {
+  font-size: 1.3rem;
+  margin-left: 20px;
+}
+
+
+.title-image {
+  text-align: right;
+  width: 50%;
+  border-color: #343a40;
+  border-width: thin;
+  border-radius: 40%;
+  border-style: groove;
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+
+.intro-text {
+  padding-top: 20%;
+  padding-left: 25%;
+}
+
+.footer-link {
+  margin: 0 20px;
+  color: #343a40;
+}
+
+.footer-link:hover {
+  color: #7D7D7D;
+}
+
+.space-button {
+  margin-bottom: 2rem;
+}
+
+.shift-button {
+  margin-left: 1rem;
+}
+
+/* Experiences Section */
+
+.exp-title {
+  margin-bottom: 2rem;
+}
+
+.exp-content {
+  background-color: white;
+  padding-top: 5%;
+  padding-left: 7%;
+  padding-bottom: 3rem;
+  text-align: left;
+}
+
+.exp-row {
+  line-height: 2;
+  margin: 50px auto 50px 50px;
+  text-align: left;
+  width: 50%;
+}
+
+
+.beacon-image {
+  float:right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width:30%;
+}
+
+.brown-image {
+  float:right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width:30%;
+}
+
+/* Skills Section */
+.skills-title {
+  margin-top: 3rem;
+}
+
+.skills-table {
+  padding: 3rem 8rem 0 2rem;
+}
+
+/* Projects Section */
+
+/* Contact Section */
+form {
+  margin: 2rem 3rem;
+}
+
+/* Responsiveness */
+
+@media (max-width:1200px) {
+  .home-content {
+    padding-bottom: 7rem;
+  }
+}
+
+@media (max-width:1100px) {
+  .home-content {
+    padding-bottom: 10rem;
+  }
+}
+
+@media (max-width:991px) {
+  .intro-text {
+    padding-top: 10%;
+    padding-left: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  .title-image {
+    margin: 0;
+    margin-top: 15%;
+    text-align: center;
+    width: 30%;
+  }
+
+  .beacon-image {
+    width:20%;
+  }
+
+  .brown-image {
+    width:20%;
+  }
+}

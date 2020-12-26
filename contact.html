@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
-    <title>Contact Infor</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-  </head>
-  <body>
-    <h1>Contact Info</h1>
-    <!-- Create table: You can create header, body, and footer
-          These can be controlled separately using CSS/JS -->
-    <table>
-      <!-- table header is used for creating column names (Strong implied)-->
-        <thead>
-          <tr>
-            <th>Contact</th>
-            <th>Address</th>
-        </thead>
-        <!-- Actual table data is used in table body-->
-        <tb>
-          <tr>
-            <td><st>Phone</st></td>
-            <td>954-326-2068</td>
-          </tr>
-          <tr>
-            <td><st>Email</st></td>
-            <td>soryan_kumar@brown.edu</td>
-          </tr>
-        </tb>
-    </table>
-    <br>
-    <br>
-    <br>
-    <!-- Create a form-->
-    <form class="" action="index.html" method="post">
-      <label for="">Your Name:</label>
-      <input type="text" name="" value="">
-      <br>
-      <label for="">Favorite color:</label>
-      <input type="color" name="" value="">
-      <br>
-      <label for="">Would you like to sign up to the email list?</label>
-      <input type="checkbox" name="" value="">
-      <br>
-      <label for="">Enter your password below:</label>
-      <input type="password" name="" value="">
-      <input type="submit" name="">
+    <title>Soryan Kumar</title>
 
-    </form>
-    <br>
-    <hr>
-    <h1>Contact Me</h1>
-    <!-- Create a form to mail to my email address-->
-    <form action="mailto:soryankumar@yahoo.com" method="post" enctype="text/plain">
-      <label for="">Name:</label>
-      <input type="text" name="your_name" value=""><br>
-      <label for="">Email:</label>
-      <input type="email" name="your_email" value=""><br>
-      <label for="">Your Message:</label><br>
-      <textarea name="your_message" rows="10" cols="30"></textarea><br>
-      <input type="submit" name="">
-    </form>
-    <h2><a href="index.html">Go Back</a></h2>
+    <!-- TODO: Load Relevant fonts -->
+
+    <!-- Load Bootstrap and link stylesheet-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- TODO: Load Font Awesome Icons -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Add Favicon -->
+    <link rel="icon" href="new-favicon.ico">
+
+  </head>
+
+  <body>
+    <section id="contact">
+
+      <!-- Nav Bar -->
+      <!-- Delete "bg-dark class to ger rid of dark background style"-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experiences.html">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="awards.html">Awards</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid exp-content">
+
+      <!-- Title -->
+      <!-- Note that two columns occur when large, but one column when medium/small (everything is out of 12)-->
+      <!-- Get buttons and other components at https://getbootstrap.com/docs/4.0/components/buttons/ -->
+      <h1 class="exp-title">Contact Me</h1>
+      <div class="row">
+
+        <form action="mailto:soryankumar@yahoo.com" method="post" enctype="text/plain">
+          <label for="">Name:</label>
+          <input type="text" name="your_name" value=""><br>
+          <label for="">Email:</label>
+          <input type="email" name="your_email" value=""><br>
+          <label for="">Your Message:</label><br>
+          <textarea name="your_message" rows="10" cols="30"></textarea><br>
+          <input type="submit" name="">
+        </form>
+
+      </div>
+
+      </div>
+
+    </section>
   </body>
+
 </html>
